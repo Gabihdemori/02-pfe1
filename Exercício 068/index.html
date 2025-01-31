@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo da Média Aritmética</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cálculo da Média Aritmética</h1>
+    <input type="number" id="numNotas" placeholder="Digite o número de notas" min="1">
+    <button onclick="coletarNotas()">Coletar Notas</button>
+    <div id="notasContainer" style="display: none;">
+        <h2>Insira as notas:</h2>
+        <div id="notasInputs"></div>
+        <button onclick="calcularMedia()">Calcular Média</button>
+    </div>
+    <p id="resultado"></p>
+</body>
+<script src="script.js"></script>
+</html>

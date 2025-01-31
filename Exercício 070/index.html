@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Eleição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simulação de Eleição</h1>
+    <input type="number" id="numEleitores" placeholder="Número total de eleitores" min="1">
+    <button onclick="iniciarEleicao()">Iniciar Eleição</button>
+
+    <div id="votacaoContainer" style="display: none;">
+        <h2>Vote em um dos candidatos:</h2>
+        <p>Candidato 1: <strong>1</strong></p>
+        <p>Candidato 2: <strong>2</strong></p>
+        <p>Candidato 3: <strong>3</strong></p>
+        <input type="number" id="voto" placeholder="Digite o número do candidato" min="1" max="3">
+        <button onclick="registrarVoto()">Votar</button>
+    </div>
+
+    <h2 id="resultado" style="display: none;"></h2>
+
+</body>
+<script src="script.js"></script>
+</html>
